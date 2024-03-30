@@ -1,0 +1,39 @@
+<html>
+<head>
+<style> 
+	p{ text-align:center; } 
+</style>
+<title>SUNSUN新歓企画謎解き</title>
+
+<hr>
+<h1 style = "text-align:center"><font color = "#000000"> SUNSUN新歓企画謎解き </font></h1>
+<hr>
+
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<form id="passwordForm">
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password">
+  <button type="button" onclick="showText()">Show Text</button>
+</form>
+
+<div id="result"></div>
+
+<script>
+function showText() {
+  var passwordInput = document.getElementById("password").value;
+  // ここでパスワードをチェックし、適切な条件でテキストを表示するかどうかを決定します
+  if (passwordInput === "sunsun") {
+    document.getElementById("result").innerText = "2,3,4回生は200円徴収させていただきます。";
+  } else {
+    document.getElementById("result").innerText = "やり直してこいバカタレども";
+  }
+}
+</script>
+	
+</body>
+</html>
